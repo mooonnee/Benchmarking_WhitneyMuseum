@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Responsive Practice_Whitney Museum</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/Whitneystyle.css">
+	<link rel="stylesheet" href="css/WhitneyMedia.css">
+	<script src="https://code.jquery.com/jquery-1.10.1.js"></script>
+	<script src="js/prefixfree.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+<div id="popQuestion">
+	<div class="popQ_Closebtn">
+		<span></span>
+		<span></span>
+	</div>
+	<dl>
+		<dt>Why did you come to whitney.org today?</dt>
+		<dd><a href="#">I enjoy experiencing art</a></dd>
+		<dd><a href="#">I am planning to visit again</a></dd>
+		<dd><a href="#">I am preparing for my first visit</a></dd>
+		<dd><a href="#">I am an artist or creative looking for inspiration</a></dd>
+		<dd><a href="#">I want to find ways to get involved (membership, jobs, etc.)</a></dd>
+		<dd><a href="#">I want to learn about American and comtemporary art</a></dd>
+		<dd><a href="#">I am an academic looking to conduct research</a></dd>
+	</dl>
+	<p>What is this?</p>
+</div>
+<header class="cf">
+	<!--반응형 로고부분-->
+	<div id="logo" class="cf">
+		<h1><a href="#"><img src="images/whitneyLogo-886b80d6d2ccb48ee458faa590b8981e.png" alt="Whitney Museum Logo"></a></h1>
+		<div>
+			<!--Desktop svg-->
+			<svg id="w_new"  viewBox="0 0 100 100" preserveAspectRatio="none" >
+				<polyline points="0,0 25,100 50,0 75,100 100,0"></polyline>
+			</svg>
+			<!--Mobile svg-->
+			<svg id="w_new_mobile"  viewBox="0 0 100 100" preserveAspectRatio="none" >
+				<polyline points="0,0 25,100 50,0 75,100 100,0"></polyline>
+			</svg>
+		</div>
+	</div>
+	<div id="scrollHeader" class="cf">
+		<p><a href="#">Whitney Museum of American Art</a></p>
+	</div>
+	<!--click dropdown menu(100%)-->
+	<nav id="pc_nav" class="cf">
+		<ul><!--position:relative-->
+		<div class="ul_center">
+			<li><a href="#">VISIT</a>
+				<div class="sub"> <!--width100%/position:absolute-->
+					<div class="sub_contents visit"> <!--중앙정렬용 width:1200px;-->
+						<ul>
+							<li><a href="#">PLAN YOUR VISIT</a></li>
+							<li><a href="#">BUY TICKETS</a></li>
+							<li><a href="#">MEMBERSHIP</a></li>
+							<li><a href="#">DINING</a></li>
+							<li><a href="#">ACCESSIBILITY</a></li>
+							<li><a href="#">GROUP VISITS</a></li>
+							<li><a href="#">WORK ON VIEW</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li><a href="#">EXHIBITIONS</a>
+				<div class="sub">
+					<div class="sub_contents exhibitions">
+						<ul>
+							<li><a href="#">CURRENT & UPCOMING</a></li>
+							<li><a href="#">PAST</a></li>
+							<li><a href="#">TOURING</a></li>
+							<li><a href="#">FILM</a></li>
+							<li><a href="#">PERFORMANCE</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li><a href="#">EVENTS</a></li>
+			<li><a href="#">ART&amp;ARTISTS</a>
+				<div class="sub">
+					<div class="sub_contents artist">
+						<ul>
+							<li><a href="#">COLLECTION</a></li>
+							<li><a href="#">WATCH & LISTEN</a></li>
+							<li><a href="#">AUDIO GUIDES</a></li>
+							<li><a href="#">ARTPORT</a></li>
+							<li><a href="#">CONSERVATION</a></li>
+							<li><a href="#">RESEARCHl</a></li>
+							<li><a href="#">RIGHTS & REPRODOCTIONS</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li><a href="#">LEARN</a>
+				<div class="sub">
+					<div class="sub_contents learn">
+						<ul>
+							<li><a href="#">EDUCATION</a></li>
+							<li><a href="#">PUBLIC PROGRAMS</a></li>
+							<li><a href="#">COURSES</a></li>
+							<li><a href="#">ACCESS</a></li>
+							<li><a href="#">COMMUNITY</a></li>
+							<li><a href="#">FAMILIES</a></li>
+							<li><a href="#">K-12</a></li>
+							<li><a href="#">TEENS</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li><a href="#">SHOP</a>
+				<div class="sub">
+					<div class="sub_contents shop">
+						<ul>
+							<li><a href="#">SHOP ONLINE</a></li>
+							<li><a href="#">GIFT MEMBERSHIP</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li><a href="#"><i class="fa fa-search"></i></a>
+				<div class="sub">
+					<div class="sub_contents search">
+						<div id="searchwindow">
+							<input type="text" placeholder="Search">
+							<button type="button">GO</button>
+						</div>
+					</div>
+				</div>
+			</li>
+			<!--여기까지 dropdown 100% menu-->
+			<li class="btn"><button>BUY TICKETS</button></li>
+			<li class="btn"><button>BECOME A MEMBER</button></li>
+		</div>
+		</ul>
+	</nav>
+	<!--#mobile_nav-->
+	<nav id="mobile_nav" class="cf">
+		<div class="mobile_menu">
+			<h2><a href="#">MENU</a></h2>
+			<p>
+				<span></span>
+			</p>
+		</div>
+		<div class="mobile_menu_sub_wrap">
+			<p class="mobile_menu_sub_clsbtn">
+				<span></span>
+			</p>
+			<ul class="mobile_menu_sub">
+				<li><a href="" title="">VISIT</a></li>
+				<li><a href="" title="">EXHIBITIONS</a></li>
+				<li><a href="" title="">EVENTS</a></li>
+				<li><a href="" title="">ART & ARTISTS <span></span></a>
+					<ul class="art_submenu">
+						<li><a href="">Collection</a></li>
+						<li><a href="">Watch &amp; Listen</a></li>
+						<li><a href="">Audio Guides</a></li>
+						<li><a href="">Artport</a></li>
+						<li><a href="">Conservation</a></li>
+						<li><a href="">Research</a></li>
+						<li><a href="">Rights &amp; Reproductions</a></li>
+					</ul>
+				</li>
+				<li><a href="" title="">LEARN</a></li>
+				<li><a href="" title="">SHOP</a></li>
+				<li class="search"><i class="fa fa-search"></i><a href="" title="">SEARCH</a>
+					<div class="search_window">
+						<input type="text" placeholder="Search"><button type="button">GO</button>
+					</div>
+				</li>
+				
+				<li class="btn"><button>BUY TICKETS</button></li>
+				<li class="btn"><button>BECOME A MEMBER</button></li>
+				<h3>Open today: 10:30am – 6pm</h3>
+			</ul>
+		</div>
+	</nav>
+	
+</header>
+<section class="cf">
+	<!---------#article1 Start----------->
+	<article id="article1" class="cf">
+		<div class="mainCaption">
+			<p>
+			DAVID 
+			WOJNAROWICZ: 
+			HISTORY KEEPS ME 
+			AWAKE AT NIGHT </p>
+			<span>NOW ON VIEW</span>
+			<p><button><a href="EXHIBITIONS/Exhibitions-DavideWojnarowicz.html">EXPLORE THE EXHIBITION</a></button></p>
+		</div>
+		<div class="mainimg">
+		</div>
+	</article>
+
+	<!---------#article2 Start----------->
+	<article id="article2" class="cf">
+		<div class="Buy_Ticket">
+			<p>BUY TICKETS ONLINE</p>
+			<span>SAVE TIME</span>
+			<p><button><a href="#">BUY TICKETS</a></button></p>
+		</div>
+		<div class="Become_Member">
+			<p>BECOME A MEMBER</p>
+			<span>SKIP THE LINE</span>
+			<p>
+				<button><a href="#">BECOME A MEMBER</a></button>
+				<button><a href="#">LEARN MORE</a></button>
+			</p>
+		</div>
+	</article>
+
+	<!---------#article3 Start----------->
+	<article id="article3" class="cf">
+		<div class="now_on_view_title">
+			<p class="title">NOW ON VIEW</p>
+			<p>
+				<button><a href="#">VIEW ALL</a></button>
+			</p>
+		</div>
+		<div class="now_on_view">
+			<div onClick="window.open();return false;">
+				<p>PACHA, LLAQTA, WASICHAY:INDIGENOUS
+				SPACE,MODERN ARCHITECTURE, NEW ART
+				</p>
+				<span>THROUGH SEP 30</span>
+				<img src="images/large_2017_Tossin_Ch_u_Mayaa_Production_Still_2.jpg" alt="">
+			</div>
+			<div onClick="window.open();return false;">
+				<p>MARY CORSE:A SURVEY IN LIGHT</p>
+				<span>THROUGH NOV 25</span>
+				<img src="images/large_Corse_Untitled__Space___Electric_Light_.jpg" alt="">
+			</div>
+		</div>
+		<div class="now_on_view_mobile">
+			<div onClick="window.open();return false;">
+				<img src="images/large_2017_Tossin_Ch_u_Mayaa_Production_Still_2.jpg" alt="">
+				<p>PACHA, LLAQTA, WASICHAY:INDIGENOUS
+				SPACE,MODERN ARCHITECTURE, NEW ART
+				</p>
+				<span>THROUGH SEP 30</span>
+			</div>
+			<div onClick="window.open();return false;">
+				<img src="images/large_Corse_Untitled__Space___Electric_Light_.jpg" alt="">
+				<p>MARY CORSE:A SURVEY IN LIGHT</p>
+				<span>THROUGH NOV 25</span>
+			</div>
+		</div>
+	</article>
+
+	<!---------#article4 Start----------->
+	<article id="article4" class="cf">
+		<a href="#"><img src="images/large_Artboard_2WEBsdd.jpg" alt=""></a>
+		<p><button><a href="#">BECOME A MEMBER</a></button></p>
+	</article>
+
+	<!---------#article5 Start----------->
+	<article id="article5" class="cf">
+		<div>
+			<video id="article5Video" src="images/Film_Program_V07.mp4" autoplay="true" loop="true"></video>
+			<a href="#" onClick="play()" return false;><img src="images/pauseCircleWhite-d996e9200c179acf770aa62733e6e439.svg" alt=""></a>
+		</div>
+		<div class="imgslideCaption">
+			<p class="title">
+				ANDY WARHOL
+				FILM SCREENINGS
+				AND PROGRAMS
+			</p>
+			<span>TICKETS ON SALE</span>
+			<p>
+				<button><a href="#">LEARN MORE</a></button>
+			</p>
+		</div>
+	</article>
+</section>
+<footer class="cf">
+<div id="footerwrap">
+	<div id="footertop">
+		<dl>
+			<dt>Get Exhibition and Program Highlights</dt>
+			<dd>
+				<input type="Email" name="Email" placeholder=" Email address">
+				<button type="button"><a href="#">SUBSCRIBE</a></button>
+			</dd>
+			<dd>
+				<ul>
+					<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+					<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+					<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+					<li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+					<li><a href="#"><i class="fab fa-tumblr"></i></a></li>
+				</ul>
+			</dd>
+		</dl>
+		<dl>
+			<dt>Get Involved</dt>
+			<dd><a href="#">Support</a></dd>
+			<dd><a href="#">Membership</a></dd>
+			<dd><a href="#">Jobs&amp;Internships</a></dd>
+		</dl>
+		<dl>
+			<dt>About</dt>
+			<dd><a href="#">About US</a></dd>
+			<dd><a href="#">Press</a></dd>
+			<dd><a href="#">Contact</a></dd>
+			<dd><a href="#">Terms&amp;Conditions</a></dd>
+		</dl>
+		<dl>
+			<dt>Whitney Museum of American Art</dt>
+			<address>
+				<pre>
+99 Gansevoort Street
+New York, NY 10014
+(212)570-3600
+				</pre>
+			</address>
+			<dt>Open today: 10.30 am-6 pm</dt>
+		</dl>
+	</div>
+	<div id="footerCopyright">
+		<address>
+			<p>© 2018 Whitney Museum of American Art</p>
+		</address>
+	</div>
+</div>
+</footer>
+</body>
+</html>
